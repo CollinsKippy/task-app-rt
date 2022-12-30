@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Learning React Fundamentals
+
+## Basic Task Manager App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
