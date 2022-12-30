@@ -5,19 +5,23 @@ const TaskForm = ({ onAddNewTask }) => {
 
   const onHandleSubmit = (event) => {
     event.preventDefault();
+    onAddNewTask(task);
+    setTask('');
   };
 
   return (
     <form onSubmit={onHandleSubmit}>
-      <label for='task'>Task Name</label>
+      <label htmlFor='task'>Task Name</label>
       <input
         type='text'
         id='task'
         name='task'
         value={task}
-        onChange={(event) => setTask(event.target.value)}
+        onChange={(e) => setTask(e.target.value)}
       />
-      <button onClick={() => onAddNewTask(task)}>Submit</button>
+      <button type='submit' style={{ backgroundColor: 'lightblue' }}>
+        Submit
+      </button>
     </form>
   );
 };
