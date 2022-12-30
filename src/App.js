@@ -2,6 +2,7 @@ import './App.css';
 import TaskList from './components/TaskList';
 import Header from './components/Header';
 import { useState } from 'react';
+import Button from './components/Button';
 
 function App() {
   const [tasks, setTasks] = useState([
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className='App'>
       <Header />
+      <Button text='New Task' />
       <TaskList tasks={tasks} />
     </div>
   );

@@ -1,7 +1,7 @@
-import { ReactPropTypes } from 'react';
+import PropTypes from 'prop-types';
 
-const Button = () => {
-  return <button>Add</button>;
+const Button = ({ text }) => {
+  return <button>{text}</button>;
 };
 
 Button.defaultProps = {
@@ -9,7 +9,7 @@ Button.defaultProps = {
 };
 
 Button.propTypes = {
-  text: ReactPropTypes.string,
+  text: PropTypes.string,
 };
 
 export default Button;
