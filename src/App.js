@@ -27,7 +27,7 @@ function App() {
     <div className='App'>
       <Header />
       <Button text='New Task' />
-      <TaskForm onAddNewTask={onAddNewTask} />
+      <TaskForm onAddNewTask={onAddNewTask} /> <hr />
       <TaskList tasks={tasks} />
     </div>
   );
